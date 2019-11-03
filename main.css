@@ -25,14 +25,18 @@ body{
 
 }
 
+.blue{
+	color: #027BFF; 
+}
+
 h1{
-	font-size: 40px;
+	font-size: 82px;
 	font-weight: 400;
 	color: #17191A
 }
 
 h2{
-	font-size: 35px;
+	font-size: 69px;
 	font-weight: 400;
 	color: #17191A
 }
@@ -59,3 +63,32 @@ p{
 	height: 100px;
 }
 
+/*-----------landing----------*/ 
+.landing{
+	height: 100vh; 
+	position: relative;
+}
+
+.landingWrapper{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px
+}
+
+ul{
+	list-style: none;
+	margin-top: 30px;
+	line-height: 30px;
+}
+
+.landingL{
+	margin-top: 4em; 
+}
+
+.scroll{
+	position: absolute;
+	bottom: 180px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
