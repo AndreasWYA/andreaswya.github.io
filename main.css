@@ -15,58 +15,117 @@
 }
 
 html{
-	font-family: circular std, sans-serif;
+	font-family: adobe gothic std;
 	font-weight: 100;
 }
 
 body{
-	width: 60%
+	width: 80%;
 	margin: auto;
-
+	/*background-image: url(images/BG.png);*/
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #f7f7f7;
 }
+
+
 
 .blue{
 	color: #027BFF; 
 }
 
 h1{
-	font-size: 82px;
-	font-weight: 400;
-	color: #17191A
+	
+	font-size: 68px;
+	font-weight: bold;
+	color: #17191A;
 }
 
 h2{
-	font-size: 69px;
-	font-weight: 400;
-	color: #17191A
+	font-size: 44px;
+	font-weight: bold;
+	color: #17191A;
 }
 
 h5{
 	font-size: 20px;
 	margin-top: 10px;
-	color: #17191A
+	color: #17191A;
 }
 
 p{
-	color: #BF9EA5;
+	color: black;
 	opacity: 0.8;
-	font-weight: 100;
+	font-weight: 400;
 	margin-top:10px;
-	font-size: 20px;
+	font-size: 28px;
+	font-family: corbel;
+}
+
+.container{
+  background-color: #f7f7f7;
+  position: relative;
 }
 
 
+/*----------nav-------------*/
+nav {
+  width:100%;
+  position: sticky;
+  position: -webkit-sticky;
+  min-height:8vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
 
-.nav{
-	display: flex;
-	align-items: center;
-	height: 100px;
+nav div.container ul{
+	list-style: none;
+	padding:0;
+  margin:0;
+  text-align: center;
+}
+
+nav div.container  ul li{
+	position:relative;
+	text-align:center;
+	padding:0;
+	margin:0;
+  display:inline-flex;
+}
+
+nav div.container  ul li a{
+	font-weight: bold;
+	text-decoration:none;
+	background-color: none;
+	color:black;
+  width:150px;
+	padding:15px 30px;
+	margin:0;
+	vertical-align: middle;
+  transition: all 2s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+
+}
+
+nav div.container ul li a:hover{
+	color:black ;
+	text-decoration:none;
+	background-color: white;
+  border-radius: 10px;
+  cursor:pointer;
+
 }
 
 /*-----------landing----------*/ 
 .landing{
-	height: 100vh; 
+	padding-top: 50px;
+	height: 70vh; 
 	position: relative;
+	background-color: white;
 }
 
 .landingWrapper{
@@ -85,10 +144,166 @@ ul{
 	margin-top: 4em; 
 }
 
-.scroll{
+.landing .scroll{
 	position: absolute;
 	bottom: 180px;
 	left: 0;
 	right: 0;
 	margin: auto;
+}
+
+table tr .left{
+  padding-left: 50px;
+}
+table tr .right{
+  padding-left: 100px;
+}
+
+
+/*-------------education------------*/
+#education{
+  height:70vh;
+  background-color: #4CACF0;
+}
+
+#education .edu-img{
+  height:250px;
+  width:250px;
+  background-color: white;
+  border-radius:50%;
+  vertical-align: middle;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+
+
+#education table .edutable{
+  background-color: rgba(255, 255, 255, 0.925);
+}
+#education table tr{
+  margin:150px;
+  height:165px;
+}
+
+
+#education .card{
+  border-radius: 1%;
+  transition: 0.3s;
+  width: 800px;
+  float: middle;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+#education .card:hover {
+  box-shadow: 0px 0px 16px 0 #666;
+}
+
+#education h2{
+	font-size: 60px;
+	color: white; 
+}
+
+a{
+	font-size: 24px;
+}
+
+a:link {
+	color: #027BFF;
+	text-decoration: none;
+}
+
+a:visited {
+  color: #A65EEA;
+    text-decoration: none;
+}
+
+a:hover {
+  color: #153E6B;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #FED330;
+  text-decoration: underline;
+}
+
+
+#education p{
+	color: white; 
+	font-family: century gothic;
+}
+
+/*#education .hide-card {
+opacity: 0;
+transform:translateX(10px);
+}*/
+
+#education h2{
+	font-size: 60px;
+}
+
+/*-------------skills------------*/ 
+#skills {
+	height:90vh;
+  position: relative;
+  vertical-align: middle;
+  background-color: white;
+}
+
+#skills img{
+  width: 200px;
+  height:200px;
+}
+
+#skills .card{
+    transition: 0.3s;
+    width: 23%;
+    float: left;
+    margin: 10px;
+    height: 60vh;
+    transition: all 0.3s ease;
+}
+
+#skills .card:hover {
+    box-shadow: 0px 0px 16px 0 #666;
+}
+
+/*#skills .hide-card {
+	opacity: 0;
+	transform:translateX(10px);
+}*/
+
+#skills h5{
+	font-size: 28px;
+}
+
+/*-------------footer--------------*/
+footer{
+	background-color: #4CACF0;
+	width: 100%;
+}
+
+footer img{
+  width:60px;
+  height:60px;
+  display: inline-block;
+  margin: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+footer h2{
+  color: white;
+  font-size: 30px;
+  font-family: adobe gothic std;
+}
+
+hr {
+  display: block;
+  border-style: inset;
+  border-width: 1px;
+  width: 50%;
 }
