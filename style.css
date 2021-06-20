@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body, html{
+  height:100%;
+  margin:0;
+  padding:0;
+  top:0;
+  left:0;
+  font-size:16px;
+  font-family:"Poppins", sans-serif;
+  font-weight:400;
+  line-height:1.7em;
+  color:#404040;
+  background:#0d6dd4;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.textLink{
+	text-decoration: none;
+	color: inherit;
+	transition-duration: 0.5s;
+}
+
+.textLink:hover{
+	text-decoration: underline;
+	color: #0d6dd4;
+	transition-duration: 0.3s;
+}
+
+a .cardLink{
+	
+}
+
+a.cardLink:hover{
+
+}
+/*  Parallax  */
+
+.pbegin{
+	position:relative;
+	background-position:center;
+  	background-size:cover;
+  	background-repeat:no-repeat;
+  	background-attachment:fixed;
+}
+
+.pbegin{
+  background-image:url('img/scenery1.jpg');
+  min-height:93%;
+}
+
+#clock{
+	line-height: 2;
+}
+
+@media(max-width:568px){
+	.parallax{
+   	background-attachment:scroll;
+  }
+}
+
+.hello{
+  position:absolute;
+  top:40%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:40px;
+  letter-spacing:8px;
+  color:white;
+  background-color:transparent;
+  font-weight:900; 
+  text-shadow:  3px  3px 0 #1C1C1C,
+    -1px -1px 0 #1C1C1C,  
+     1px -1px 0 #1C1C1C,
+    -1px  1px 0 #1C1C1C,
+     1px  1px 0 #1C1C1C;
+}
+
+.container{
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+/* Navigation Bar */ 
+
+nav {
+ 	width:100%;
+ 	position: sticky;
+ 	position: -webkit-sticky;
+ 	min-height:8vh;
+ 	top: 0;
+ 	left: 0;
+ 	z-index: 1;
+}
+
+nav div.container ul{
+	list-style: none;
+	padding:0;
+ 	margin:0;
+  	text-align: center;
+}
+
+nav div.container  ul li{
+	position:relative;
+	text-align:center;
+	padding:0;
+	margin:0;
+  	display:inline-flex;
+}
+
+nav div.container  ul li a{
+	font-weight: bold;
+	text-decoration:none;
+	background-color: none;
+	color:black;
+  	width:150px;
+	padding:25px 30px;
+	margin:0;
+	vertical-align: middle;
+  	transition: all 0.5s ease-in-out;
+  	-webkit-transition: all 0.5s ease-in-out;
+  	-moz-transition: all 0.2s ease-in-out;
+  	-o-transition: all 0.2s ease-in-out;
+}
+
+nav div.container ul li a:hover{
+	color:white ;
+	text-decoration:none;
+	background-color: #2c85d6;
+  	
+  	cursor:pointer;
+}
+
+ul li{
+	font-size: 20px;
+}
+
+/* Bio Preview Section */
+#bioPreview{
+	height:auto;
+	padding: 10% 5%;
+	/*margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 20px;*/
+ 	background-color: #f7f7f7;
+}
+
+#bioPreview h1{
+	font-size: 36px;	
+}
+
+/* Works Preview Section */
+
+#workPreview{
+	height: auto;
+	padding-top: 2%;
+	padding-bottom: 3%;
+	padding-left: 3%;
+	padding-right: 3%;
+	margin-top: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: #f7f7f7;
+	width: auto;
+}
+
+#workPreview h2{
+	font-size: 28px;
+}
+
+.previewCard{
+	border-radius: 1%;
+  	transition: 0.3s;
+  	width: auto;
+  	float: middle;
+  	margin: 10px;
+  	transition: all 0.3s ease;
+}
+
+.previewCard:hover{
+	box-shadow: 0px 0px 16px 0 orange;
+	color: orange;
+}
+
+/* Contact Preview Section */
+#contactPreview{
+	height: auto;
+	padding: 5%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: #f7f7f7;
+}
+
+/* About Me Bio */
+
+#bio{
+	height: auto;
+	background-color: #f7f7f7;
+	margin: 10px 10%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.bioImg{
+	max-width: 50%;
+	height: : auto;
+	border-radius: 35px;
+}
+
+.eduBox{
+	background-color: #e5e5e5;
+	height: 100%;
+	padding-top: 2%; 
+	padding-bottom: 2%;
+}
+
+.eduBox h4{
+	font-size: 24px;
+}
+
+.eduBox p{
+	font-size: 20px;
+}
+
+.interestBox{
+	padding: 2% 3%;
+	height: auto;
+	position: relative;
+  	vertical-align: middle;
+}
+
+.interestBox h4{
+	font-size: 24px;
+}
+
+.interestCard{
+	height: 100%;
+	border-radius: 1%;
+  	transition: 0.3s;
+  	width: auto;
+  	float: middle;
+  	margin: 10px;
+  	transition: all 0.3s ease;
+  	text-align: center;
+  	padding: 3% 10%;
+}
+
+.interestCard:hover{
+	box-shadow: 0px 0px 16px 0 #0d6dd4;
+}
+
+.interestCard img{
+	max-width: 30%;
+	max-height: 30%;
+}
+
+/* Works Page Styles */
+.worksBox{
+	height: auto;
+	padding: 3%;
+	margin-top: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 15px;
+	background-color: #f7f7f7;
+}
+
+.worksBox td#SCworkBox{
+	padding-left: 30px; 
+	padding-right: 100px;
+}
+
+.worksBox td#MAworkBox, .worksBox td#QWworkBox{
+	padding-left: 30px; 
+	padding-right: 100px;
+	width: 75%;
+}
+
+ul#otherworksList{
+	margin-left: 25%; 
+	margin-right: 25%;
+}
+
+.eduImg{
+	border-radius: 100%;
+	background: white;
+	max-width: 50%;
+	height: auto;
+}
+
+.contactBox{
+	height: auto;
+	background: #f7f7f7;
+	padding: 2% 3%;
+	margin-top: 3%;
+	margin-right: 10%;
+	margin-left: 10%;
+	text-align: center;
+	font-size: 20px;
+}
+
+.contactBox input{ 
+	width: 50%;
+ 	line-height: 3em;
+	font-size: 16px;
+ 	font-family:"Poppins", sans-serif;
+ 	border-radius: 5px;
+}
+
+textarea{
+	font-size: 16px;
+	font-family:"Poppins", sans-serif;
+	width: 50%;
+	border-radius: 5px;
+}
+
+button.submitBtn{
+	font-size: 16px;
+	width: 30%;
+	font-family:"Poppins", sans-serif;
+	padding: 1% 2%;
+}
+
+footer{
+	height: auto;
+	background-color: black;
+	color: white;
+}
+
+footer a{
+	transition-duration: 0.3s;
+}
+
+footer a:hover{
+	color: orange;
+	transition-duration: 0.3s;
+}
+
+footer span{
+	font-weight: bold;
+	color: orange;
+}
+
+footer img{
+	width: 25px;
+	height: 25px;
+	background-color: white;
+	border: 2px solid white;
+}
+
+@media(max-width: 600px){
+	#clock{
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+
+	nav div.container  ul li a{
+		width: 300px;
+		padding: 25px 0;
+	}
+
+	h1{
+		font-size: 24px;
+	}
+
+	#bioPreview, #workPreview, #contactPreview, #bio, .contactBox, .worksBox{
+		margin: 3% 0;
+	}
+
+	#bio p{
+		font-size: 16px;
+	}
+
+	#bio .previewCard{
+		min-width: 90%;
+	}
+
+	#bio
+
+	table, tr, th, td{
+		display: block;
+	}
+
+	th{
+		min-width: 90%;
+	}
+
+	td{
+		min-width: 100%
+	}
+
+	#workPreview .previewCard{
+		width: 105%;
+	}
+
+	#footerBar table{
+		min-width: 70%;
+	}
+
+	#socialismPV{
+		width: 90%;
+	}
+
+	#quizwebPV{
+		width: 70%;
+	}
+
+	#bio th.left{
+		box-shadow:0px 0px 0px #0d6dd4; 
+	}
+
+	.worksBox{
+		width: 97%;
+		padding-right: 0;
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+
+	.worksBox table tr td{
+		min-width: 60%;
+		
+	}
+
+	.worksBox td{
+		padding-right: 0px;
+		text-align: center;
+	}
+
+	.worksBox td#SCworkBox{
+		padding-right: 15%;
+		padding-left: 10%;
+	}
+
+	.worksBox td#MAworkBox, .worksBox td#QWworkBox{
+		padding-right: 12%;
+		padding-left: 12%;
+	}
+
+	img#scImg{
+		max-width: 290px;
+	}
+
+	img#quizImg{
+		max-width: 290px;
+	}
+
+	.worksBox p#workDesc{
+		text-align: left;
+	}
+
+	.worksBox ul{
+		margin-right: 0;
+	}
+
+	.worksBox hr{
+		width: 100%;
+	}
+
+	.worksBox img#workImage{
+		display: block;
+ 		margin-left: auto;
+  		margin-right: auto;
+  		width: 50%;
+	}
+
+	ul#otherworksList{
+		margin-right: 0;
+		margin-left: 0;
+		padding-bottom: 5%;
+	}
+
+	#socialismPic{
+		width: 70%;
+	}
+
+	.contactBox input{
+		width: 95%;
+	}
+
+	textarea{
+		width: 95%;
+	}
+}
+
+@media(min-width: 600px){
+	#bioPreview{
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 20px;
+	}
+}
