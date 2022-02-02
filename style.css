@@ -355,6 +355,11 @@ footer img{
 	border: 2px solid white;
 }
 
+#workLink{
+	width: 300px;
+	text-align: center;
+}
+
 @media(max-width: 600px){
 	#clock{
 		margin-right: 10%;
@@ -396,6 +401,7 @@ footer img{
 		min-width: 100%
 	}
 
+	
 	#workPreview .previewCard{
 		width: 105%;
 	}
