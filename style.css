@@ -277,7 +277,7 @@ ul li{
 	padding-right: 100px;
 }
 
-.worksBox td#MAworkBox, .worksBox td#QWworkBox{
+.worksBox td#MAworkBox, .worksBox td#QWworkBox, .worksBox td#FRworkBox{
 	padding-left: 30px; 
 	padding-right: 100px;
 	width: 75%;

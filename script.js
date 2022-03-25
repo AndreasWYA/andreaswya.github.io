@@ -1,9 +1,4 @@
-$(".scroller").click(function(e) {
-  e.preventDefault();
-  $('body,html').animate({
-    scrollTop: $(this.hash).offset().top
-  }, 1000 );
-});
+
 
 function startTime() {
   var today = new Date();
@@ -35,44 +30,4 @@ function reduce(i){
   if (i > 12) {i = i - 12}
   return i;
 }
-
-$(window).scroll(function(){
-
-  var interestsPosition = $("#education").offset().top - 350;
-  var screenPosition = $(window).scrollTop();
-
-  if(screenPosition >= interestsPosition){
-
-    setTimeout(function(){
-      $(".edu").removeClass("hide-card");
-    }, 300);
-  }
-});
-
-
-$(window).scroll(function(){
-
-  var interestsPosition = $("#interests").offset().top - 350;
-  var screenPosition = $(window).scrollTop();
-
-
-  if(screenPosition >= interestsPosition){
-
-    setTimeout(function(){
-      $(".coding").removeClass("hide-card");
-    }, 300);
-
-    setTimeout(function(){
-      $(".chess").removeClass("hide-card");
-    }, 600);
-
-    setTimeout(function(){
-      $(".cards").removeClass("hide-card");
-    }, 900);
-
-    setTimeout(function(){
-      $(".vgames").removeClass("hide-card");
-    }, 1200);
-  }
-});
 
